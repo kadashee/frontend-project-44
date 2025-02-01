@@ -8,3 +8,5 @@ Brain-Common-Divisor
 [![asciicast](https://asciinema.org/a/LVnlLRV16GRXO6nsHWilJTzut.svg)](https://asciinema.org/a/LVnlLRV16GRXO6nsHWilJTzut)
 Brain-Progression
 [![asciicast](https://asciinema.org/a/wIaL8Uh3JW5o0OlROjHhKc4xY.svg)](https://asciinema.org/a/wIaL8Uh3JW5o0OlROjHhKc4xY)
+Brain-Prime
+[![asciicast](https://asciinema.org/a/A7Lx1BstWwVJPKzrcU4SjQn0J.svg)](https://asciinema.org/a/A7Lx1BstWwVJPKzrcU4SjQn0J)

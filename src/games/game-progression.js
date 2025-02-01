@@ -12,7 +12,7 @@ const createProgression = (start, difference, length) => {
 const hideElement = (progression) => {
     const hiddenIndex = getRandomNum(0, progression.length - 1);
     const hiddenElement = progression[hiddenIndex];
-    progression[hiddenIndex] = '...'
+    progression[hiddenIndex] = '..'
     return hiddenElement;
 }
 

@@ -14,7 +14,7 @@ const gameDescription = 'Find the greatest common divisor of given numbers.'
 const getGameRound = () => {
     const num1 = getRandomNum(1, 100);
     const num2 = getRandomNum(1, 100);
-    const question = `Question: ${num1} ${num2}`;
+    const question = `${num1} ${num2}`;
     const correctAnswer = String(getCommonDivisor(num1, num2));
     return [question, correctAnswer];
 }

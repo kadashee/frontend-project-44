@@ -25,7 +25,7 @@ const getGameRound = () => {
 
     const progression = createProgression(start, difference, length);
     const correctAnswer = String(hideElement(progression));
-    const question = `Question: ${progression.join('  ')}`;
+    const question = `${progression.join('  ')}`;
     return [question, correctAnswer];
 }
 

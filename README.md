@@ -1,4 +1,5 @@
 ### Hexlet tests and linter status:
+
 [![Actions Status](https://github.com/kadashee/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/kadashee/frontend-project-44/actions)
 Brain-Even
 [![asciicast](https://asciinema.org/a/mPpWENWcpTEzOxW1KMoJ11Xrw.svg)](https://asciinema.org/a/mPpWENWcpTEzOxW1KMoJ11Xrw)

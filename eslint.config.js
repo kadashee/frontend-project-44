@@ -6,9 +6,9 @@ export default [
   {
     languageOptions: { globals: globals.browser },
     rules: {
-      'no-console': 'off', // Отключение правила no-console
-      'import/extensions': 'off' // Отключение правила import/extensions
-    }
+      "no-console": "off", // Отключение правила no-console
+      "import/extensions": "off", // Отключение правила import/extensions
+    },
   },
   pluginJs.configs.recommended,
 ];

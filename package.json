@@ -23,7 +23,8 @@
     "brain-prime": "bin/brain-prime.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"

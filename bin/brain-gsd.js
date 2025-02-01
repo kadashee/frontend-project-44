@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import { runGame } from "../src/index.js";
-import { getGameRound, gameDescription } from "../src/games/game-common-divisor.js";
+import { getGameRound, gameDescription } from "../src/games/game-gsd.js";
 
 runGame(gameDescription, getGameRound);

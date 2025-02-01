@@ -1,4 +1,4 @@
-import { getRandomNum} from "../utils.js";
+import { getRandomNum } from "../utils.js";
 
 const getCommonDivisor = (num1, num2) => {
     while (num2 !== 0) {

@@ -6,6 +6,7 @@ brain-games:
 	node src/games/brain-even.js
 	node src/games/brain-calc.js
 	node src/games/brain-common-divisor.js
+	node src/games/brain-progression.js
 
 publish:
 	npm publish --dry-run

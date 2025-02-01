@@ -2,12 +2,12 @@ install:
 	npm ci
 
 brain-games:
-	node src/game/brain-games.js
-	node src/games/brain-even.js
-	node src/games/brain-calc.js
-	node src/games/brain-gcd.js
-	node src/games/brain-progression.js
-	node sec/games/brain-prime.js
+	node bin/brain-games.js
+	node bin/brain-even.js
+	node bin/brain-calc.js
+	node bin/brain-gcd.js
+	node bin/brain-progression.js
+	node bin/brain-prime.js
 
 publish:
 	npm publish --dry-run

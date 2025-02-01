@@ -2,7 +2,13 @@ install:
 	npm ci
 
 brain-games:
-	node bin/brain-games.js
+	node src/game/brain-games.js
+	node src/games/brain-even.js
+	node src/games/brain-calc.js
+	node src/games/brain-common-divisor.js
 
 publish:
 	npm publish --dry-run
+
+lint:
+	npx eslint

@@ -23,7 +23,7 @@ const runGame = (gameDescription, getGameRound) => {
             return;
         }
     }
-    console.log(`Congratulations, ${userName}`);
+    console.log(`Congratulations, ${userName}!`);
 }
 
 export { runGame };

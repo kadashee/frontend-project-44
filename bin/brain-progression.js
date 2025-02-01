@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import {runGame} from "../src/index.js";
+import { runGame } from "../src/index.js";
 import {
-    getGameRound,
-    gameDescription,
+  getGameRound,
+  gameDescription,
 } from "../src/games/game-progression.js";
 
 runGame(gameDescription, getGameRound);

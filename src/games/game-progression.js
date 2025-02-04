@@ -13,7 +13,7 @@ const hideElement = (progression) => {
   const hiddenIndex = getRandomNum(0, newProgression.length - 1);
   const hiddenElement = newProgression[hiddenIndex];
   newProgression[hiddenIndex] = '..';
-  return hiddenElement;
+  return hiddenElement !== undefined ? hiddenElement : 0;
 };
 
 const gameDescription = 'What number is missing in the progression?';

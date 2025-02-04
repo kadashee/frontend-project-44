@@ -1,4 +1,4 @@
-import { getRandomNum } from "../utils.js";
+import getRandomNum from '../utils.js';
 
 const createProgression = (start, difference, length) => {
   const progression = [];
@@ -9,13 +9,14 @@ const createProgression = (start, difference, length) => {
 };
 
 const hideElement = (progression) => {
-  const hiddenIndex = getRandomNum(0, progression.length - 1);
-  const hiddenElement = progression[hiddenIndex];
-  progression[hiddenIndex] = "..";
+  const newProgression = [...progression];
+  const hiddenIndex = getRandomNum(0, newProgression.length - 1);
+  const hiddenElement = newProgression[hiddenIndex];
+  newProgression[hiddenIndex] = '..';
   return String(hiddenElement);
 };
 
-const gameDescription = "What number is missing in the progression?";
+const gameDescription = 'What number is missing in the progression?';
 
 const getGameRound = () => {
   const start = getRandomNum(1, 10);
@@ -24,7 +25,7 @@ const getGameRound = () => {
 
   const progression = createProgression(start, difference, length);
   const correctAnswer = hideElement(progression);
-  const question = progression.join(" ");
+  const question = progression.join(' ');
   return [question, correctAnswer];
 };
 

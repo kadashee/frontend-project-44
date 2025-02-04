@@ -1,7 +1,7 @@
-import readlineSync from "readline-sync";
-import { getUserName } from "./cli.js";
+import readlineSync from 'readline-sync';
+import getUserName from './cli.js';
 
-console.log("Welcome to the Brain games!");
+console.log('Welcome to the Brain games!');
 
 const runGame = (gameDescription, getGameRound) => {
   const userName = getUserName();
@@ -9,14 +9,14 @@ const runGame = (gameDescription, getGameRound) => {
 
   const roundsCount = 3;
 
-  for (let i = 0; i < roundsCount; i++) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = getGameRound();
 
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === correctAnswer) {
-      console.log("Correct!");
+      console.log('Correct!');
     } else {
       console.log(
         `${userAnswer} is wrong answer! Correct answer was ${correctAnswer}`,
@@ -28,4 +28,4 @@ const runGame = (gameDescription, getGameRound) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { runGame };
+export default runGame;

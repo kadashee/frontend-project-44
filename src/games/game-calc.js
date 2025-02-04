@@ -1,20 +1,21 @@
 #!/usr/bin/env node
-import { getRandomNum } from "../utils.js";
+import getRandomNum from '../utils.js';
 
-const gameDescription = "What is the result of the expression?";
+const gameDescription = 'What is the result of the expression?';
 
-let operators = ["+", "-", "*"];
+const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {
-  if (operator === "+") {
+  if (operator === '+') {
     return String(num1 + num2);
   }
-  if (operator === "-") {
+  if (operator === '-') {
     return String(num1 - num2);
   }
-  if (operator === "*") {
+  if (operator === '*') {
     return String(num1 * num2);
   }
+  return null;
 };
 
 const getGameRound = () => {

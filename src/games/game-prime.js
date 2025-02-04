@@ -1,18 +1,17 @@
-import { getRandomNum } from "../utils.js";
+import getRandomNum from '../utils.js';
 
-const gameDescription =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number <= 1) {
-    return "no";
+    return 'no';
   }
-  for (let i = 2; i <= Math.sqrt(number); i++) {
+  for (let i = 2; i <= Math.sqrt(number); i += 1) {
     if (number % i === 0) {
-      return "no";
+      return 'no';
     }
   }
-  return "yes";
+  return 'yes';
 };
 
 const getGameRound = () => {

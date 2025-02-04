@@ -1,6 +1,8 @@
-import { getRandomNum } from "../utils.js";
+import getRandomNum from '../utils.js';
 
-const getCommonDivisor = (num1, num2) => {
+const getCommonDivisor = (a, b) => {
+  let num1 = a;
+  let num2 = b;
   while (num2 !== 0) {
     const remainder = num2;
     num2 = num1 % num2;
@@ -9,7 +11,7 @@ const getCommonDivisor = (num1, num2) => {
   return num1;
 };
 
-const gameDescription = "Find the greatest common divisor of given numbers.";
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const getGameRound = () => {
   const num1 = getRandomNum(1, 100);

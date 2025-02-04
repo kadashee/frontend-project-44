@@ -13,8 +13,7 @@ const hideElement = (progression) => {
   const hiddenIndex = getRandomNum(0, newProgression.length - 1);
   const hiddenElement = newProgression[hiddenIndex];
   newProgression[hiddenIndex] = '..';
-  return hiddenElement !== undefined ? hiddenElement : 0;
-};
+  return { newProgression, hiddenElement };
 
 const gameDescription = 'What number is missing in the progression?';
 
@@ -24,7 +23,8 @@ const getGameRound = () => {
   const length = getRandomNum(5, 10);
 
   const progression = createProgression(start, difference, length);
-  const correctAnswer = String(hideElement(progression));
+  const { newProgression, hiddenElement } = hideElement(progression);
+  const correctAnswer = String(hiddenElement);
   const question = progression.join(' ');
   return [question, correctAnswer];
 };

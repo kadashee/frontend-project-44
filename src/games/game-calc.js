@@ -1,21 +1,22 @@
 #!/usr/bin/env node
 import getRandomNum from '../utils.js';
+import runGame from '../index.js';
 
 const gameDescription = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
 
 const calculate = (num1, num2, operator) => {
-  if (operator === '+') {
-    return String(num1 + num2);
+  switch (operator) {
+    case '+':
+      return String(num1 + num2);
+    case '-':
+      return String(num1 - num2);
+    case '*':
+      return String(num1 * num2);
+    default:
+      throw new Error(`Unsupported operator: ${operator}`);
   }
-  if (operator === '-') {
-    return String(num1 - num2);
-  }
-  if (operator === '*') {
-    return String(num1 * num2);
-  }
-  return null;
 };
 
 const getGameRound = () => {
@@ -26,9 +27,11 @@ const getGameRound = () => {
   const operator = operators[operatorsIndex];
 
   const question = `${num1} ${operator} ${num2}`;
-  const correctAnswer = calculate(num1, num2, operator);
+  const correctAnswer = String(calculate(num1, num2, operator));
 
   return [question, correctAnswer];
 };
 
-export { getGameRound, gameDescription };
+const runCalc = () => runGame(gameDescription, getGameRound);
+
+export { getGameRound, gameDescription, runCalc };
